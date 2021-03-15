@@ -18,9 +18,11 @@
         async function subscripe () {
             let sw = await navigator.serviceWorker.ready;
 
+            console.log(sw, "HERE>>>>");
+
             let push = await sw.pushManager.subscribe({
                 userVisibleOnly: true,
-                applicationServerKey: "BMwyK-t_ATBA05-9lGES1VgQlVBCGmyMbcEE4UJpzhhqGBQbpKkjdBxsDyzl40_ILXYCn8qRnhYE5IuHOJxf3dk"
+                applicationServerKey: "BMwyK-   -9lGES1VgQlVBCGmyMbcEE4UJpzhhqGBQbpKkjdBxsDyzl40_ILXYCn8qRnhYE5IuHOJxf3dk"
             })
 
             console.log(JSON.stringify(push))
